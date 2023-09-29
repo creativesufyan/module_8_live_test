@@ -31,7 +31,6 @@ class VerticalImageList extends StatelessWidget {
         return Card(
           child: Column(
             children: [
-              Text("Sufyan"),
               Container(
                 padding: EdgeInsets.all(8.0),
                 child: Image.network(
@@ -42,6 +41,7 @@ class VerticalImageList extends StatelessWidget {
                   fit: BoxFit.cover,
                 ),
               ),
+              Text("Sufyan"),
             ],
           ),
         );
@@ -62,21 +62,18 @@ class HorizontalImageGrid extends StatelessWidget {
       itemCount: 10,
       itemBuilder: (context, index) {
         return Card(
-          child: Center(
-            child: Container(
-              padding: EdgeInsets.all(8.0),
-              child: Column(
-                children: [
-                  Text("Sufyan"),
-                  Image.network(
-                    'https://via.placeholder.com/150', // Replace with the actual image URL
-                    width: 150,
-                    height: 150,
-                    fit: BoxFit.cover,
-                  ),
-                ],
+          // color: Colors.pink,
+          child: Column(
+            children: [
+              Container(
+                padding: EdgeInsets.all(8.0),
+                child: Image.network(
+                  'https://via.placeholder.com/150', // Replace with the actual image URL
+                  fit: BoxFit.cover,
+                ),
               ),
-            ),
+              Text("Sufyan"),
+            ],
           ),
         );
       },
